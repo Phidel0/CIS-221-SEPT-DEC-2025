@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fashion Store</title>
+        <style>
+            body{font-family:Arial,sans-serif;background:#fff;margin:0;text-align:center}
+            header,footer{background:#ff6f61;color:#fff;padding:12px}
+            h3{color:#ff6f61}
+            table{margin:20px auto;border-collapse:collapse;width:80%;box-shadow:0 2px 6px rgba(0,0,0,2)}
+            th{background:#ff6f61;color:#fff}
+            th,td{border:1px solid #ccc;padding:10px}
+            tr:nth-child(even){background:#ffeaea}
+            tr:hover{background:#fff3cd}
+        </style>
+    </head>
+    <body>
+        <header><h1>Fashion Store</h1></header>
+        <h3>Inventory & Sales Report</h3>
+        <table>
+            <tr><th>Item</th><th>Price</th><th>Stock</th><th>Sold</th><th>Revenue</th></tr>
+            <tr>
+                <td><?= $x['item_name']?></td>
+                <td>$<?= $x['price']?></td>
+                <td><?= $x['stock']?></td>
+                <td><?= $x['sold']?></td>
+                <td>$<?= $x['revenue']?></td>
+            </tr>
+        </table>
+        <footer>&copy; 2025 Fashion Store</footer>
+    </body>
+</html>
